@@ -57,8 +57,8 @@
     "BaseClass"           "ability_lua"
 	"ScriptFile"					"cool_beans"
 
-    "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET "
-    "AbilityTextureName"     "dragon_knight_dragon_tail"
+    "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityTextureName"     "jojo"
     "AbilityUnitTargetTeam"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
     "AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
@@ -99,5 +99,14 @@
 				"vision_radius" 		"500"
 			}
 		}
+	}
+	"my_arrow"
+	{
+		// General
+    // ----------------------------------------------------------------------------------------
+    "BaseClass"           "ability_lua"
+	"ScriptFile"					"my_arrow"
+
+	"AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_POINT"
 	}
 }

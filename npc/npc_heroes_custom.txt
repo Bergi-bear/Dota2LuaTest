@@ -11,8 +11,6 @@
 		"override_hero"				"npc_dota_hero_templar_assassin"			// Hero to override
 		"Ability1"					"custom_blink"		// Ability 1
 		"Ability2"					"cool_beans"
-		--"Ability3"					"custom_blink"
-		--"Ability4"					"custom_blink"
-		
+		"Ability3"					"my_arrow"
 	}
 }

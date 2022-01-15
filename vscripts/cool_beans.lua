@@ -17,7 +17,8 @@ function cool_beans:OnSpellStart()
             --damage_flags = DOTA_DAMAGE_FLAG_NONE, --Optional.
             --ability      = playerHero:GetAbilityByIndex(0), --Optional.
         }
-
         ApplyDamage(damageTable)
+        local stunDuration =self:GetSpecialValueFor("stun_duration")
+        print("sd= "..stunDuration)
     end
 end
