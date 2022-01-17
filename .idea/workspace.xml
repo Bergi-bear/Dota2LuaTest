@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9468ceee-c879-48fa-b6b3-d1b3ed607f9f" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/vscripts/game_setup.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vscripts/my_arrow.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vscripts/test_modifier.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/npc/herolist.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/npc/npc_abilities_custom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/npc/npc_abilities_custom.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/npc/npc_heroes_custom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/npc/npc_heroes_custom.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vscripts/addon_game_mode.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/addon_game_mode.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vscripts/cool_beans.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/cool_beans.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vscripts/custom_blink.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/custom_blink.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

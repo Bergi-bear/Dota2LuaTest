@@ -28,7 +28,9 @@ function CAddonTemplateGameMode:InitGameMode()
     print("Template addon is loaded.")
     GameRules:GetGameModeEntity():SetThink("OnThink", self, "GlobalThink", 2)
     CreateUnitByName("npc_dota_hero_axe",Vector(0,50,0),true,nil,nil,DOTA_TEAM_BADGUYS)
-    GameSetup:init()
+    --GameSetup:init()
+    GameRules:SetUseUniversalShopMode(true)
+
     CreateUnitByName("gnoll_boy", Vector(0, 200, 0), true, nil, nil, DOTA_TEAM_BADGUYS)
     ListenToGameEvent("entity_killed", Dynamic_Wrap(self, "OnUnitKilled"), self)
 end
