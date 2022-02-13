@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9468ceee-c879-48fa-b6b3-d1b3ed607f9f" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/vscripts/FakeInit.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vscripts/Printable.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9468ceee-c879-48fa-b6b3-d1b3ed607f9f" name="Default Changelist" comment="Можно рубить деревья и собирать бананы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/npc/npc_items_custom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/npc/npc_items_custom.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vscripts/FakeInit.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/FakeInit.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vscripts/addon_game_mode.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/addon_game_mode.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vscripts/game_setup.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/game_setup.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vscripts/my_arrow.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/my_arrow.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +19,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="23dliXJWKIH26UqlYxByUxz6Sva" />
@@ -60,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642072063801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Можно рубить деревья и собирать бананы">
+      <created>1644788599721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644788599721</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Можно рубить деревья и собирать бананы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Можно рубить деревья и собирать бананы" />
   </component>
 </project>

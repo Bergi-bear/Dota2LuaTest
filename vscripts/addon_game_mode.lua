@@ -68,8 +68,8 @@ function CAddonTemplateGameMode:On_tree_cut(data)
         data2.TreeCount=1
     else
         data2.TreeCount=data2.TreeCount+1
-        print(data2.TreeCount)
     end
+    print(data2.TreeCount)
 end
 
 

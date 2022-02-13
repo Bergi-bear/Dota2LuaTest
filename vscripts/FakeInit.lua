@@ -4,11 +4,18 @@
 --- DateTime: 13.02.2022 22:44
 ---
 -- In the final version both these should be changed to local
-HERO={}
+HERO = {}
 function FakeInit()
     --HERO[0]={}
     local player = PlayerResource:GetPlayer(0)
     local hero = player:GetAssignedHero()
-    hero:AddItemByName("item_blink_staff")
     hero:AddItemByName("item_quelling_blade")
+    hero:AddItemByName("item_blink_staff")
+
+    local ability = hero:FindAbilityByName("monkey_king_tree_dance")
+    if ability then
+        ability:SetLevel(1)
+    end
+
+    --hero:AddAbility("shredder_chakram"):SetLevel(1)
 end
