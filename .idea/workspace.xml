@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9468ceee-c879-48fa-b6b3-d1b3ed607f9f" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/npc/herolist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vscripts/FakeInit.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vscripts/Printable.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/npc/npc_items_custom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/npc/npc_items_custom.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vscripts/addon_game_mode.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/addon_game_mode.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vscripts/game_setup.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/game_setup.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vscripts/my_arrow.lua" beforeDir="false" afterPath="$PROJECT_DIR$/vscripts/my_arrow.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +34,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/dota2_lua_api/EmmyLuaAnnotations/Vector.lua" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/dota2_lua_api/dota-lua-typedefs-master/dota_typedefs.lua" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2045977" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota_addons\empty\scripts\vscripts" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

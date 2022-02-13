@@ -8,7 +8,7 @@ if GameSetup == nil then
 end
 
 --nil will not force a hero selection
-local forceHero = "templar_assassin"
+local forceHero = "monkey_king"
 
 
 function GameSetup:init()

@@ -4,7 +4,7 @@
 --- DateTime: 13.01.2022 16:05
 ---
 my_arrow = class({})
-LinkLuaModifier("test_modifier", LUA_MODIFIER_MOTION_NONE)
+--LinkLuaModifier("test_modifier", LUA_MODIFIER_MOTION_NONE)
 
 function my_arrow:OnSpellStart()
     local caster = self:GetCaster()
@@ -42,7 +42,7 @@ function my_arrow:OnSpellStart()
     ProjectileManager:CreateLinearProjectile(info)
 end
 
-function my_arrow:OnProjectileHit(hTarget, vLocation)
+function my_arrow:OnProjectileHit(hTarget, vLocation) -- from CDOTA_Ability_Lua
 
     if hTarget == nil then
         --print("arrow expired")
@@ -57,4 +57,5 @@ function my_arrow:OnProjectileHit(hTarget, vLocation)
 
     return true
 end
+
 
