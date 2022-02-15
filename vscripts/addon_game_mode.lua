@@ -1,4 +1,3 @@
-
 if CAddonTemplateGameMode == nil then
     print("ALL OK1")
     CAddonTemplateGameMode = class({})
@@ -18,6 +17,8 @@ end
 require("game_setup")
 require("FakeInit")
 require("Printable")
+require("Timers")
+require("BananaSystem")
 -- Create the game mode when we activate
 function Activate()
     GameRules.AddonTemplate = CAddonTemplateGameMode()
@@ -49,38 +50,72 @@ function CAddonTemplateGameMode:InitGameMode()
     ListenToGameEvent("entity_killed", Dynamic_Wrap(self, "OnUnitKilled"), self)
     ListenToGameEvent("player_spawn", Dynamic_Wrap(self, 'On_player_spawn'), self)
     ListenToGameEvent("game_start", Dynamic_Wrap(self, 'On_game_start'), self)
-    ListenToGameEvent("tree_cut", Dynamic_Wrap(self, 'On_tree_cut'), self)
+    ListenToGameEvent("tree_cut", Dynamic_Wrap(self, 'On_tree_cut'), self) -- рег эвент на смерть деревьев
+    ListenToGameEvent("dota_item_used", Dynamic_Wrap(self, 'On_dota_item_used'), self)
+    ListenToGameEvent("dota_player_used_ability", Dynamic_Wrap(self, 'On_dota_player_used_ability'), self)
+end
 
+function CAddonTemplateGameMode:On_dota_player_used_ability(data)
+    --print("[BAREBONES] dota_player_used_ability")
+    --PrintTable(data)
+    if data.abilityname == "item_blink_staff" then
+        print("использован банан")
+        local hero = EntIndexToHScript(data.caster_entindex)
+        --local item = Charge
+        local inventory = { hero:GetItemInSlot(0), hero:GetItemInSlot(1), hero:GetItemInSlot(2), hero:GetItemInSlot(3), hero:GetItemInSlot(4), hero:GetItemInSlot(5), hero:GetItemInSlot(6), hero:GetItemInSlot(7), hero:GetItemInSlot(8), }
+        for k, v in pairs(inventory) do
+            if v:GetName() == data.abilityname then
+                v:SetCurrentCharges(v:GetCurrentCharges() - 1)
+                local ch=v:GetCurrentCharges()
+                if ch==0 then
+                    --v:RemoveItem()
+                    hero:RemoveItem(v)
+                end
+                --print("зарядов у банана")
+            end
+        end
+
+
+    end
 end
 
 function CAddonTemplateGameMode:On_tree_cut(data)
-    local x,y=data.tree_x, data.tree_y
-    x=x+math.random(-50,50)
-    y=y+math.random(-50,50)
-    local item = CreateItem("item_blink_staff", nil, nil)
-    CreateItemOnPositionForLaunch(Vector(x,y, 128), item)
-    local data2=HERO[data.killerID]
+    local x, y = data.tree_x, data.tree_y
+
+    local r = math.random(0, 2)
+    for i = 1, r do
+
+        x = x + math.random(-50, 50)
+        y = y + math.random(-50, 50)
+        local item = CreateItem("item_blink_staff", nil, nil)
+        CreateItemOnPositionForLaunch(Vector(x, y, 128), item)
+        item:LaunchLootRequiredHeight(false, 0, 128, 1, Vector(x, y, 0) + RandomVector(RandomFloat(0, 100)))
+
+    end
+
+    --JumpItem(x,y,item)
+    local data2 = HERO[data.killerID]
     if not data2 then
-        HERO[data.killerID]={}
-        data2=HERO[data.killerID]
+        HERO[data.killerID] = {}
+        data2 = HERO[data.killerID]
     end
     if not data2.TreeCount then
-        data2.TreeCount=1
+        data2.TreeCount = 1
     else
-        data2.TreeCount=data2.TreeCount+1
+        data2.TreeCount = data2.TreeCount + 1
+        --счетчик вырезанных деревьев
     end
     print(data2.TreeCount)
 end
 
-
 function CAddonTemplateGameMode:On_game_start(data)
-    print("[BAREBONES] game_start")
-    PrintTable(data)
+    -- print("[BAREBONES] game_start")
+    --PrintTable(data)
 end
 
 function CAddonTemplateGameMode:On_player_spawn (data)
     local id = data.userid
-    print("Создан юнит ", id)
+    -- print("Создан юнит ", id)
 end
 
 function CAddonTemplateGameMode:OnUnitKilled (args)

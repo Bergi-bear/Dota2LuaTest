@@ -32,24 +32,29 @@
 
     	"item_blink_staff"
     {
-        "AbilityTextureName" "item_banana"
+        "AbilityTextureName"            "item_banana"
         "ID"                            "1251" // anything above 1250 should be safe to use.
         "BaseClass"                     "item_lua"
         "AbilityManaCost"               "5"
         "AbilityName"					"Banana"
-        "model" "models\props_gameplay\banana_prop_closed.vmdl"
-        "Effect" "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality" "consumable"
-        "PingOverrideText" "banana"
+        "model"                         "models\props_gameplay\banana_prop_closed.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                   "consumable"
+        "PingOverrideText"              "DOTA_Chat_Text_String"
 
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 
-        "ItemInitialCharges" "1"
-        "ItemStackable" "1"
-        "ItemPermanent" "0"
+        "ItemInitialCharges"            "1"
+		"ItemCost"						"1"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
 
-        "ItemAlertable" "1"
+		"ItemKillable"					"0"
     }
 }
